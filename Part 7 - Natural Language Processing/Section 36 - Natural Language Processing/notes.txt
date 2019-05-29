@@ -1,0 +1,12 @@
+Stemming = extracting the radicals of the words
+
+BAG OF WORDS MODEL
+	Create one column for each unique word present in the corpus (tokenization)
+	The rows of this table will be every sentence
+	The intersection of the row and the table will be how many times the word appears in the sentence
+	The resulting table is a sparse matrix called bag of words
+	
+The most utilized classification algorithms in the field of NLP are Naïve Bayes and Random Forest. Some other models:
+	CART
+	C5.0
+	Maximum Entropy

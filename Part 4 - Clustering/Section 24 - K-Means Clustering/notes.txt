@@ -1,0 +1,17 @@
+K-MEANS
+	STEPS:
+		1-Choose the number K of clusters
+		2-Select at random K points, the centroids (not necessarily from your dataset)
+		3-Assign each data point to the closest centroid -> That forms K clusters
+		4-Compute and place the new centroid of each clusters
+		5-Reassign each data point to the new closest centroid. If any reassignment took place, go to STEP 4, otherwise go to FIN.
+		
+	Random Initialization Trap:
+		The initial value for the centroids can affect the final results. K-Means++ deals with this problem.
+		
+	Choosing the right amount of clusters:
+		Within-Cluster Sum of Squares (WCSS)
+			WCSS = Sum(distance(Pi,c1)^2) for Pi in Cluster 1 +
+				   Sum(distance(Pi,c2)^2) for Pi in Cluster 2 + ...
+			
+			The Elbow Method: identify the elbow-like section of a graph of WCSS by number of clusters and select that point as the number of clusters.

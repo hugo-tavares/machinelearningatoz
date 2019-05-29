@@ -1,0 +1,7 @@
+Assumptions of a Linear Regression:
+	Linearity
+	Homoscedasticity (que porra é essa)
+		homogeneidade de variância
+	Multivariate normality
+	Independence of errors
+	Lack of multicollinearity

@@ -1,0 +1,18 @@
+Naïve Bayes:
+	The algorithm basically computes all the probabilities P(1st class|X), P(2nd class|X), etc. and see which one is more likely, X being the region (it's a parameterizable radius) of x.
+	For each class, do:
+		1-Compute the Prior Probability (P(class1))
+		
+		2-Compute de Marginal Likelihood (P(X)), X being a region of elements close enough to x. Basically the probability of that a random element in the dataset is contained in the aforementioned region.
+		
+		3-Compute the likelihood (P(X|class1): probability of an element of class1 being contained in the X region (elements with features similar to x)
+		
+		4- P(class1|x) = (likelyhood * prior-probability)/marginal likelihood
+	and select the most likely class.
+	
+	OBS:
+		It's called naïve because it assumes the features are independent
+		
+		P(X) is used in the computation of all the classes and it's always the same value, so we can just cut it out from the formula, since what we what is just which probability is higher, not this probability's value.
+		
+		

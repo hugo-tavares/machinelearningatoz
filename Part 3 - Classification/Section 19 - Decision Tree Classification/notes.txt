@@ -1,0 +1,7 @@
+DECISION TREES
+	The algorithm splits the geometric representation of the points while trying to maximize the leafs containing members of the same class.
+	
+	The splits also try to minimize the information entropy (wtf)
+	
+	
+	

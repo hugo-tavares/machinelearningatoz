@@ -1,0 +1,40 @@
+BUILDING A MODEL
+5 Methods:
+	1.All-in
+	2.Backward Elimination          |-
+	3.Forward Selection				|-	Stepwise Regression
+	4.Bidirectional Elimination		|-
+	5.Score Comparison
+	
+	1. Use all variables. Cases:
+		Prior knowledge;
+		You have to;
+		Preparing for Backward Elimination
+		
+	2. Steps:
+		1-Select a significance level to stay in the model (e.g. SL=0.05)
+		2-Fit the full model with all possible predictors
+		3-Consider the predictor with the highpes P-value. If P > SL, go to STEP 4, otherwise go to FIN
+		4-Remove the predictor
+		5-Fit model without this variable and go to Step 3
+		
+	3. Steps:
+		1-Select a significance level to enter the model (e.g. SL=0.05)
+		2-Fit all simple regression models y ~ xn. Select the one with the lowest P-value
+		3-Keep this variable and fit all possible models with one extra predictor added to the one(s) you already have
+		4-Consider the predictor with the lowest P-value. If P < SL, go to Step 3, otherwise go to FIN.
+		FIN: Keep the previous model
+		
+	4. Steps:
+		1-Select a significance level to enter and to stay in the model e.g.: SLENTER = 0.05, SLSTAY = 0.05
+		2-Perform the next step of Forward Selection (new variables must have: P < SLENTER to enter)
+		3- Perform ALL steps of Backward Elimination (old variables must have P < SLSTAY to stay). Go to Step 2
+		4-No new variables can enter and no old variables can exit. FIN
+		
+	5. All Possible Models. Steps:
+		1-Select a criterion of goodnes of fit (e.g. Akaike criterion)
+		2-Construct All Possible Regression Models:  2^N-1 total combinations
+		3-Select the one with the best criterion
+		
+In the course, we will use Backward Elimination because it's the fastest one;
+		

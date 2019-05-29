@@ -1,0 +1,51 @@
+False Positive = Type I Error
+False Negative = Type II Error
+
+Subjectively, the type II error is more dangerous then the first one.
+
+Confusion matrix:
+
+	<- actual
+
+	^ predicted
+	|
+				predicted
+				0		1
+	actual	0	ok		typeI
+			1	typeII	ok
+			
+	Accuracy Rate = Correct/Total
+	Error Rate = Incorrect/Total
+
+Accuracy Paradox
+	Classifying everything as pertaining to the same class can sometimes actually improve significantly the accuracy of the model.
+	
+	You can't use just the accuracy to assess the quality of a model
+	
+		Accuracy = (TP + TN) / (TP + TN + FP + FN)
+
+		Precision = TP / (TP + FP)
+
+		Recall = TP / (TP + FN)
+
+		F1 Score = 2 * Precision * Recall / (Precision + Recall)
+
+	Cumulative Accuracy Profile (CAP) != Receiver Operating Characteristics (ROC)
+	
+	CAP Analysis:
+		Analyzing through the area under the curves:
+			AR = aR/aP
+			
+			aP = area between the perfect model and the random one
+			aR = area between the good model and the random one
+			
+			The closer AR is to 1, the better.
+		
+		You can also see the percentage of right guesses corresponding to the 50% effort:
+			90% < X < 100% -> Too good (possibly forward-looking features or over-fitting)
+			80% < X < 90%  -> Very good
+			70% < X < 80%  -> Good
+			60% < X < 70%  -> Poor 
+				X< 60% 	   -> Rubbish
+				
+	

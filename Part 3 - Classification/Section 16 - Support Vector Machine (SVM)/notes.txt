@@ -1,0 +1,6 @@
+Support Vector Machines
+	The algorithm aims to find the maximum margin between the two closest points pertaining to the different classes.
+	These points are considered as "support vectors" (the points are seen as vectors starting from the origin to the point).
+	
+	SVM are interesting because their focus is the elements which are close to the border of their classes.
+	We can only use this simple svm (the linear one) when the data is linearly separable, otherwise, we need to explore different kernels

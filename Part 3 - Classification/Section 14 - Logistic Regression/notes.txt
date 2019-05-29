@@ -1,0 +1,9 @@
+Logistic Regression works applying the sigmoid function to the linear regression.
+
+p^ => predicted probability
+y^ => predicted value
+
+If p^ > 0.5 => y^ = 1
+else y^ = 0
+
+The line which separates the regions is called The Prediction Boundary. It's important to notice that, in the case of logistic regression the prediction boundary is a line due to the fact that it is a linear classifier.

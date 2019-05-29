@@ -1,0 +1,9 @@
+KERNEL SVM
+	To deal with non linearly separable data, we can map the non linearly separable data into a higher dimensional space where they are linearly separable, do the separation and then map back to the original space.
+	
+	Mapping to a higher dimensional space can be highly compute-intensive, so, instead, we use the Kernel trick to do it.
+	
+	The kernel function is a function capable of simulating that mapping by returning the 'distance' without being computationally intensive, some examples of kernel functions:
+		Radial Basis Function(RBF)/Gaussian function
+		Sigmoid Kernel
+		Polynomial Kernel
