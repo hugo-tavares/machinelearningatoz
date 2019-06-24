@@ -1,0 +1,7 @@
+It's a simplified apriori algorithm, it only considers the support metric
+	support(M) = #elements containing M / #elements
+	
+	Steps:
+		1- Set a minimum support
+		2- Take all the subsets in transactions having higher support than minimum support
+		3- Sort these subsets by decreasing support

@@ -1,0 +1,17 @@
+The algorithm has 3 parts:
+	Support:
+		support(M2) = # elements containing M2 / # elements
+	Confidence (basically conditional probability):
+		confidence(M1 -> M2) = # elements containing M1 and M2 / # elements containing M1
+	Lift (improvement of probability when restricting to M1):
+		lift(M1 -> M2) = confidence(M1 -> M2) / support (M2)
+		
+	Steps:
+		1- Set a minimum support and confidence
+		2- Take all the subsets in transactions having higher support than minimum support
+		3- Take all the rules of these subsets having higher confidence than minimum confidence
+		4- Sort the rules by decreasing lift
+		
+It is a slow algorithm because it tries all the combinations, so to mitigate this cost, we define minimum support and confidence.
+
+It is a straight forward algorithm to find association rules, but in recommendation systems, usually more robust approaches are employed.

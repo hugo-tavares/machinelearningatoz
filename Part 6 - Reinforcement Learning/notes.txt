@@ -1,0 +1,10 @@
+Reinforcement Learning is also called Online Learning
+
+The Multi-Armed Bandit Problem
+	There are X slot machines, each one with a different probability distribution, the goal is to find the optimal one as soon as possible.
+	There are also more complex variants of this problem, the defined version can be adapted to the context of finding which ads are more effective.
+	
+TO STUDY:
+	Upper Confidence Bound (UCB);
+	Thomson Sampling;
+	Other approaches in reinforcement learning
